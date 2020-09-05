@@ -1,7 +1,7 @@
 {
   "name": "pern-boiler",
   "version": "1.0.0",
-  "description": "",
+  "description": "A PERN boilerplate for fast development",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
