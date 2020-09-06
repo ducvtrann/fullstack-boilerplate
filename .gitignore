@@ -1,3 +1,12 @@
-/.vscode
-/node_modules
+# Personal
+.vscode
+
+# Mac
+.DS_Store
+
+# Others
+node_modules
+dist
+
+
 
