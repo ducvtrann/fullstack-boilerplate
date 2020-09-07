@@ -4,7 +4,7 @@
   "description": "A PERN boilerplate for fast development",
   "main": "index.js",
   "scripts": {
-    "build-client": "webpack",
+    "build-client": "NODE_ENV='production' webpack",
     "build-client-watch": "webpack-dev-server --open --hot",
     "start": "node server",
     "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server",
