@@ -7,12 +7,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const DIST_DIR = path.join(__dirname, '../dist');
 
-// This is a global Mocha hook, used for resource cleanup.
-// Otherwise, Mocha v4+ never quits after tests.
-if (process.env.NODE_ENV === 'test') {
-  after('close the session store', () => sessionStore.stopExpiringSessions());
-}
-
 if (process.env.NODE_ENV !== 'production') {
   require('../config/secrets');
 }
