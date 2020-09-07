@@ -33,4 +33,13 @@ module.exports = {
   },
   plugins: [htmlPlugin],
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+  devtool: 'source-map',
+  watchOptions: {
+    ignored: /node_modules/,
+  },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
+  },
 };
