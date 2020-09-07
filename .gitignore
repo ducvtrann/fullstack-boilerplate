@@ -7,6 +7,7 @@
 # Others
 node_modules
 dist
+/config/secrets.js
 
 
 
