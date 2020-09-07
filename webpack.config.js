@@ -32,5 +32,5 @@ module.exports = {
     filename: 'index_bundle.js',
   },
   plugins: [htmlPlugin],
-  mode: (process.env.NODE_ENV = 'production' ? 'production' : 'development'),
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
 };
