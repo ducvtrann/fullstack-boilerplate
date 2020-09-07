@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-client": "webpack",
-    "build-client-watch": "webpack -w",
+    "build-client-watch": "webpack-dev-server --open --hot",
     "start": "node server",
     "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server",
     "start-server": "nodemon server -e html,js,scss --ignore public --ignore client"
@@ -31,6 +31,7 @@
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21"
   }
 }

@@ -8,9 +8,9 @@ const DIST_DIR = path.join(__dirname, '../dist');
 const HTML_FILE = path.join(DIST_DIR, 'index.html');
 
 app.get('/', (req, res) => {
-  console.log(' I hit here');
   res.sendFile(HTML_FILE);
 });
+
 app.use(express.static(DIST_DIR));
 
 app.listen(PORT, () => {
